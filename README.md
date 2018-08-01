@@ -26,9 +26,9 @@ Current build status
 Current release info
 ====================
 
-[![Conda Downloads](https://img.shields.io/conda/dn/loopbio/libjpeg-turbo.svg)](https://anaconda.org/loopbio/libjpeg-turbo)
-[![Conda Version](https://img.shields.io/conda/vn/loopbio/libjpeg-turbo.svg)](https://anaconda.org/loopbio/libjpeg-turbo)
-[![Conda Platforms](https://img.shields.io/conda/pn/loopbio/libjpeg-turbo.svg)](https://anaconda.org/loopbio/libjpeg-turbo)
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-libjpeg--turbo-green.svg)](https://anaconda.org/loopbio/libjpeg-turbo) | [![Conda Downloads](https://img.shields.io/conda/dn/loopbio/libjpeg-turbo.svg)](https://anaconda.org/loopbio/libjpeg-turbo) | [![Conda Version](https://img.shields.io/conda/vn/loopbio/libjpeg-turbo.svg)](https://anaconda.org/loopbio/libjpeg-turbo) | [![Conda Platforms](https://img.shields.io/conda/pn/loopbio/libjpeg-turbo.svg)](https://anaconda.org/loopbio/libjpeg-turbo) |
 
 Installing libjpeg-turbo
 ========================
