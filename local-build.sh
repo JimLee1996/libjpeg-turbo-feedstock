@@ -1,2 +1,2 @@
 #!/bin/bash
-CONFIG="circle_" .circleci/run_docker_build.sh
+CONFIG="linux_" .circleci/run_docker_build.sh

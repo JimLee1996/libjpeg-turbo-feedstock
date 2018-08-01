@@ -90,7 +90,7 @@
 #    https://github.com/AnacondaRecipes/opencv-feedstock
 #
 
-{% set version = "1.5.90" %}  # This is 2.0beta1
+{% set version = "2.0.0" %}
 {% set build_number = "0" %}
 
 package:
@@ -100,23 +100,20 @@ package:
 source:
   fn: libjpeg-turbo-{{ version }}.tar.gz
   url: https://github.com/libjpeg-turbo/libjpeg-turbo/archive/{{ version }}.tar.gz
-  sha256: cb948ade92561d8626fd7866a4a7ba3b952f9759ea3dd642927bc687470f60b7
+  sha256: f892fff427ab3adffc289363eac26d197ce3ccacefe5f5822377348a8166069b
 
 build:
   number: {{ build_number }}
   skip: True  # [not linux]
   string: noclob_prefixed_gcc48_{{ build_number }}
-
-  # FIXME: uncomment once upstream is released and therefore version is bumped to 2.x
-  # run_exports:
+  run_exports:
     # compatible within major version numbers
     # https://abi-laboratory.pro/tracker/timeline/libjpeg-turbo/
-    # - {{ pin_subpackage('libjpeg-turbo') }}
+    - {{ pin_subpackage('libjpeg-turbo') }}
 
 requirements:
   build:
-    # FIXME: uncomment this once we get downstream deps to use the newer compilers too
-    # - {{ compiler('c') }}
+    - {{ compiler('c') }}
     - cmake
     - yasm
 
